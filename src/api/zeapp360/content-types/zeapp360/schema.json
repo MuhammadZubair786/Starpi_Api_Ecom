@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zeapp360s",
+  "info": {
+    "singularName": "zeapp360",
+    "pluralName": "zeapp360s",
+    "displayName": "zeapp360"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Website": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20,
+      "minLength": 5,
+      "unique": false
+    }
+  }
+}

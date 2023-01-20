@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 71,
+      "unique": false,
+      "minLength": 5
+    },
+    "Slug": {
+      "type": "uid",
+      "required": true,
+      "minLength": 3,
+      "maxLength": 110
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Tshirt",
+        "Stickers",
+        "Food",
+        "Softwares"
+      ],
+      "default": "Tshirt",
+      "required": true
+    },
+    "Size": {
+      "type": "string",
+      "maxLength": 20
+    },
+    "Color": {
+      "type": "enumeration",
+      "enum": [
+        "red",
+        "Blue",
+        "Yellow",
+        "Black"
+      ],
+      "required": true
+    },
+    "Price": {
+      "type": "integer",
+      "required": true
+    },
+    "Aviable_Qty": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    }
+  }
+}
